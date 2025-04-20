@@ -3,11 +3,12 @@ def count_words (text):
     return len(words)
 
 def count_characters (text):
-    character_dict = {}
-    for character in text:
-        character.lower()
-        if character in character_dict:
-            character_dict[character] += 1
+    char_count = {}
+    for char in text:
+        char = char.lower()
+        if char in char_count:
+            char_count[char] += 1
         else:
-            character_dict[character] = 1
-    return character_dict
+            char_count[char] = 1
+    return char_count
+    

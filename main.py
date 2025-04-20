@@ -9,6 +9,8 @@ def main():
     filepath = './books/frankenstein.txt'
     text = get_book_text(filepath)
     print(f"{count_words(text)} words found in the document")
-    print(f"{character_dict} characters found in the document")
+    print(f"{count_characters(text)} characters found in the document")
+
+
 
 main()
